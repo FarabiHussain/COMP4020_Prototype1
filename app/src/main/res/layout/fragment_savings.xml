@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/as"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#191919"
+    tools:context=".SavingsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".MainScreen"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:id="@+id/titleSavings"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginRight="52dp"
+            android:gravity="center_horizontal"
+            android:text="SAVINGS"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorLink="#4CAF50"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/savingsReminder"
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:clickable="false"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="3sp"
+            android:phoneNumber="false"
+            android:scrollbars="vertical"
+            android:text="YOU HAVE A PENDING DEPOSIT FOR $100 THIS MONTH."
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleSavings" />
+
+
+        <Button
+            android:id="@+id/buttonTransferToSavings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="TRANSFER TO SAVINGS"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/savingsReminder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="@+id/savingsReminder"
+            app:layout_constraintTop_toTopOf="@+id/savingsReminder"
+            app:layout_constraintVertical_bias="0.833" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayo"
+        android:layout_width="596dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+        tools:context=".MainScreen"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:id="@+id/currentSavingsView"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:bufferType="normal"
+            android:gravity="center_horizontal"
+            android:text="YOUR CURRENT SAVINGS"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/savings0"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/savings0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/savings1"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/savings1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+        <!-- <TextView
+             android:id="@+id/textView11"
+             android:layout_width="390dp"
+             android:layout_height="30dp"
+             android:layout_marginStart="11dp"
+             android:layout_marginLeft="11dp"
+             android:layout_marginTop="16dp"
+             android:textColor="#F00"
+             android:text="Luxury Shopping - $1789"
+             android:textSize="24sp"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+         <TextView
+             android:id="@+id/textView13"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="11dp"
+             android:layout_marginLeft="11dp"
+             android:layout_marginTop="18dp"
+             android:text="Transportation - $70.89"
+             android:textColor="#080"
+             android:textSize="24sp"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+         <TextView
+             android:id="@+id/textView12"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="11dp"
+             android:layout_marginLeft="11dp"
+             android:layout_marginTop="18dp"
+             android:text="Groceries - $200.04"
+             android:textColor="#080"
+             android:textSize="24sp"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/textView11" />-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7"
+        tools:context=".MainScreen"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="TRANSFER HISTORY"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/rView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider7"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/transferHistory1"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="48dp"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:inputType="textPersonName"
+            android:text="MARCH\t\t\t\t\t\t\t\t\t\t\t\t+$100.00"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider7" />
+
+        <View
+            android:id="@+id/divider9"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/transferHistory1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/editTextTextPersonName5"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="38dp"-->
+        <!--            android:layout_marginTop="8dp"-->
+        <!--            android:ems="10"-->
+        <!--            android:inputType="textPersonName"-->
+        <!--            android:text="         DECEMBER                                                   +$0.00"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:textSize="16sp"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintHorizontal_bias="1.0"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />-->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98"
+        tools:context=".MainScreen"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="127dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="143dp"
+            android:layout_marginLeft="143dp"
+            android:layout_marginEnd="148dp"
+            android:layout_marginRight="148dp"
+            android:text="Back"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
