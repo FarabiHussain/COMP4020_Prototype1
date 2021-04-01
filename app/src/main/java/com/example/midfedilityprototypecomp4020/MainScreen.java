@@ -19,7 +19,6 @@ import java.util.List;
 
 public class MainScreen extends Fragment {
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
@@ -76,7 +75,6 @@ public class MainScreen extends Fragment {
             @Override
             public void onClick(View v) {
                 Fragment fragment = new ProfileFragment();
-
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.mainScreen, fragment);

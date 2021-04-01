@@ -14,10 +14,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 public class FinancialHistoryAdapter extends RecyclerView.Adapter<FinancialHistoryAdapter.Viewholder> {
-
     List<String> names;
     List<Double> money;
-
 
     public FinancialHistoryAdapter(List<String> names, List<Double> money) {
         this.names = names;

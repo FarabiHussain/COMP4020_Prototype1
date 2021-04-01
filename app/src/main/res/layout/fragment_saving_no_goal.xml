@@ -25,38 +25,34 @@
 
         <TextView
             android:id="@+id/titleSavings"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginStart="52dp"
-            android:layout_marginLeft="52dp"
-            android:layout_marginEnd="52dp"
-            android:layout_marginRight="52dp"
             android:text="SAVINGS"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textColorLink="#4CAF50"
             android:textSize="32sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.055" />
 
         <Button
             android:id="@+id/buttonTransferToSavings"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
             android:text="Set Savings Goal"
             android:textColor="@color/white"
             android:textSize="14sp"
             app:backgroundTint="#009688"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.974" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -76,10 +72,6 @@
             android:id="@+id/button2"
             android:layout_width="110dp"
             android:layout_height="58dp"
-            android:layout_marginStart="143dp"
-            android:layout_marginLeft="143dp"
-            android:layout_marginEnd="148dp"
-            android:layout_marginRight="148dp"
             android:text="Back"
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"

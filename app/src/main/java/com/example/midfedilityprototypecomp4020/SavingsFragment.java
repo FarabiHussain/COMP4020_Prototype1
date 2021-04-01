@@ -24,7 +24,6 @@ public class SavingsFragment extends Fragment {
     private TextView recentDeposit;
     private TextView savingsReminder;
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
@@ -55,20 +54,22 @@ public class SavingsFragment extends Fragment {
             fragmentTransaction.commit();
         });
 
-
         transferButton.setOnClickListener(v -> {
             savings0.setVisibility(View.INVISIBLE);
             savings1.setVisibility(View.VISIBLE);
             recentDeposit.setVisibility(View.VISIBLE);
             savingsReminder.setText("THANK YOU FOR YOUR DEPOSIT. YOU'RE ONE STEP CLOSER TO YOUR GOAL!");
             transferButton.setClickable(false);
+            transferButton.setVisibility(View.INVISIBLE);
         });
 
         return view;
     }
 
     public static double round(double value, int places) {
-        if (places < 0) throw new IllegalArgumentException();
+        if (places < 0) {
+            throw new IllegalArgumentException();
+        }
 
         BigDecimal bd = BigDecimal.valueOf(value);
         bd = bd.setScale(places, RoundingMode.HALF_UP);

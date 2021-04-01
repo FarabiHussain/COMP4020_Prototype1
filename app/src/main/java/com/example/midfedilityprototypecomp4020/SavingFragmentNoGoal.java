@@ -21,7 +21,6 @@ import android.widget.Toast;
 
 public class SavingFragmentNoGoal extends Fragment {
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -67,7 +66,7 @@ public class SavingFragmentNoGoal extends Fragment {
                 lay.addView(two);
                 builder.setView(lay);
 
-// Set up the buttons
+                // Set up the buttons
                 builder.setPositiveButton("Save", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -90,6 +89,7 @@ public class SavingFragmentNoGoal extends Fragment {
                         //m_Text = input.getText().toString();
                     }
                 });
+
                 builder.setNegativeButton("Back", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

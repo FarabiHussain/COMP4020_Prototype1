@@ -25,14 +25,13 @@ public class ProfileFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view =inflater.inflate(R.layout.fragment_profile, container, false);
-
+        View view = inflater.inflate(R.layout.fragment_profile, container, false);
         view.findViewById(R.id.button11).setVisibility(View.GONE);
         view.findViewById(R.id.button10).setVisibility(View.GONE);
 
 
         Button back = view.findViewById(R.id.button2);
-        back.setOnClickListener(new View.OnClickListener(){
+        back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Fragment fragment = new MainScreen();
@@ -46,7 +45,7 @@ public class ProfileFragment extends Fragment {
 
 
         Button twelve = view.findViewById(R.id.button12);
-        twelve.setOnClickListener(new View.OnClickListener(){
+        twelve.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
@@ -70,7 +69,7 @@ public class ProfileFragment extends Fragment {
                 lay.addView(two);
                 builder.setView(lay);
 
-// Set up the buttons
+                // Set up the buttons
                 builder.setPositiveButton("Save", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -100,13 +99,8 @@ public class ProfileFragment extends Fragment {
         });
 
 
-
-
-
-
-
         Button nine = view.findViewById(R.id.button9);
-        nine.setOnClickListener(new View.OnClickListener(){
+        nine.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
@@ -130,19 +124,19 @@ public class ProfileFragment extends Fragment {
                 lay.addView(two);
                 builder.setView(lay);
 
-// Set up the buttons
+                // Set up the buttons
                 builder.setPositiveButton("Save", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         //if(one.getText().toString().contains("@")&&one.getText().toString().contains(".")) {
-                            final TextView t = view.findViewById(R.id.primaryName);
-                            t.setText(one.getText().toString());
-                            final TextView t2 = view.findViewById(R.id.primaryNumber);
-                            t2.setText(two.getText().toString());
-                            nine.setVisibility(View.GONE);
+                        final TextView t = view.findViewById(R.id.primaryName);
+                        t.setText(one.getText().toString());
+                        final TextView t2 = view.findViewById(R.id.primaryNumber);
+                        t2.setText(two.getText().toString());
+                        nine.setVisibility(View.GONE);
                         view.findViewById(R.id.button11).setVisibility(View.VISIBLE);
-                       // } else {
-                         //   Toast.makeText(getActivity(),"Not A Valid Email",Toast.LENGTH_SHORT).show();
+                        // } else {
+                        //   Toast.makeText(getActivity(),"Not A Valid Email",Toast.LENGTH_SHORT).show();
                         //}
                         //m_Text = input.getText().toString();
                     }
@@ -159,10 +153,8 @@ public class ProfileFragment extends Fragment {
         });
 
 
-
-
         Button thirt = view.findViewById(R.id.button13);
-        thirt.setOnClickListener(new View.OnClickListener(){
+        thirt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
@@ -188,7 +180,7 @@ public class ProfileFragment extends Fragment {
                 lay.addView(two);
                 builder.setView(lay);
 
-// Set up the buttons
+                // Set up the buttons
                 builder.setPositiveButton("Save", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -242,7 +234,7 @@ public class ProfileFragment extends Fragment {
                 lay.addView(two);
                 builder.setView(lay);
 
-// Set up the buttons
+                // Set up the buttons
                 builder.setPositiveButton("Save", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -267,8 +259,8 @@ public class ProfileFragment extends Fragment {
         });*/
 
 
-        Button eleven= view.findViewById(R.id.button11);
-        eleven.setOnClickListener(new View.OnClickListener(){
+        Button eleven = view.findViewById(R.id.button11);
+        eleven.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
@@ -292,7 +284,7 @@ public class ProfileFragment extends Fragment {
                 lay.addView(two);
                 builder.setView(lay);
 
-// Set up the buttons
+                // Set up the buttons
                 builder.setPositiveButton("Save", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -316,10 +308,8 @@ public class ProfileFragment extends Fragment {
         });
 
 
-
-
         Button ten = view.findViewById(R.id.button10);
-        ten.setOnClickListener(new View.OnClickListener(){
+        ten.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
@@ -343,7 +333,7 @@ public class ProfileFragment extends Fragment {
                 lay.addView(two);
                 builder.setView(lay);
 
-// Set up the buttons
+                // Set up the buttons
                 builder.setPositiveButton("Save", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
