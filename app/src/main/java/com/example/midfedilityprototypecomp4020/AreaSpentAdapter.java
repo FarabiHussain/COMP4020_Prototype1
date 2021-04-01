@@ -17,9 +17,9 @@ public class AreaSpentAdapter extends RecyclerView.Adapter<AreaSpentAdapter.View
     List<String> names;
     List<Double> money;
 
-    public AreaSpentAdapter(List<String>names,List<Double> money){
-        this.names=names;
-        this.money=money;
+    public AreaSpentAdapter(List<String> names, List<Double> money) {
+        this.names = names;
+        this.money = money;
     }
 
 
@@ -28,10 +28,8 @@ public class AreaSpentAdapter extends RecyclerView.Adapter<AreaSpentAdapter.View
     public AreaSpentAdapter.Viewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         Context context = parent.getContext();
         LayoutInflater inflater = LayoutInflater.from(context);
-        View view= inflater.inflate(R.layout.fh_row,parent,false);
-        Viewholder viewholder= new Viewholder(view);
-
-
+        View view = inflater.inflate(R.layout.fh_row, parent, false);
+        Viewholder viewholder = new Viewholder(view);
 
 
         return viewholder;
@@ -41,16 +39,16 @@ public class AreaSpentAdapter extends RecyclerView.Adapter<AreaSpentAdapter.View
     @Override
     public void onBindViewHolder(@NonNull AreaSpentAdapter.Viewholder holder, int position) {
         holder.name.setText(names.get(position));
-        holder.money.setText("$"+money.get(position).toString());
-        if(position==0){
-            holder.name.setTextColor(Color.parseColor("#FF0000"));
-            holder.money.setTextColor(Color.parseColor("#FF0000"));
-        } else if (position==1||position==4){
-            holder.name.setTextColor(Color.parseColor("#9b870c"));
-            holder.money.setTextColor(Color.parseColor("#9b870c"));
-        }else if (position==2||position==3){
-            holder.name.setTextColor(Color.parseColor("#00FF00"));
-            holder.money.setTextColor(Color.parseColor("#00FF00"));
+        holder.money.setText("$" + money.get(position).toString());
+        if (position == 0) {
+            holder.name.setTextColor(Color.parseColor("#ffffff"));
+            holder.money.setTextColor(Color.parseColor("#ffffff"));
+        } else if (position == 1 || position == 4) {
+            holder.name.setTextColor(Color.parseColor("#ffffff"));
+            holder.money.setTextColor(Color.parseColor("#ffffff"));
+        } else if (position == 2 || position == 3) {
+            holder.name.setTextColor(Color.parseColor("#ffffff"));
+            holder.money.setTextColor(Color.parseColor("#ffffff"));
         }
     }
 
@@ -66,29 +64,25 @@ public class AreaSpentAdapter extends RecyclerView.Adapter<AreaSpentAdapter.View
 
     @Override
     public void onAttachedToRecyclerView(
-            RecyclerView recyclerView)
-    {
+            RecyclerView recyclerView) {
         super.onAttachedToRecyclerView(recyclerView);
     }
 
-    public class Viewholder extends RecyclerView.ViewHolder implements View.OnClickListener{
+    public class Viewholder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        private TextView name,money;
+        private TextView name, money;
 
 
         public Viewholder(@NonNull View itemView) {
             super(itemView);
-            name =itemView.findViewById(R.id.textView3);
-            money=itemView.findViewById(R.id.textView4);
-
+            name = itemView.findViewById(R.id.textView3);
+            money = itemView.findViewById(R.id.textView4);
 
 
             itemView.setOnClickListener(this);
 
 
-
         }
-
 
 
         @Override

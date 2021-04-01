@@ -35,7 +35,6 @@ public class MainScreen extends Fragment {
         money.add(43.78);
         FinancialHistoryAdapter adapter = new FinancialHistoryAdapter(names, money);
 
-
         rView.setAdapter(adapter);
         rView.setLayoutManager(new LinearLayoutManager(view.getContext()));
 

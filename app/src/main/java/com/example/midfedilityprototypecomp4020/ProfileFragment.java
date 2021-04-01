@@ -75,9 +75,9 @@ public class ProfileFragment extends Fragment {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         //if(one.getText().toString().contains("@")&&one.getText().toString().contains(".")) {
-                        final TextView t = view.findViewById(R.id.textView14);
+                        final TextView t = view.findViewById(R.id.savingName);
                         t.setText(one.getText().toString());
-                        final TextView t2 = view.findViewById(R.id.textView13);
+                        final TextView t2 = view.findViewById(R.id.savingsNumber);
                         t2.setText(two.getText().toString());
                         twelve.setVisibility(View.GONE);
                         view.findViewById(R.id.button10).setVisibility(View.VISIBLE);
@@ -135,9 +135,9 @@ public class ProfileFragment extends Fragment {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         //if(one.getText().toString().contains("@")&&one.getText().toString().contains(".")) {
-                            final TextView t = view.findViewById(R.id.textView17);
+                            final TextView t = view.findViewById(R.id.primaryName);
                             t.setText(one.getText().toString());
-                            final TextView t2 = view.findViewById(R.id.textView18);
+                            final TextView t2 = view.findViewById(R.id.primaryNumber);
                             t2.setText(two.getText().toString());
                             nine.setVisibility(View.GONE);
                         view.findViewById(R.id.button11).setVisibility(View.VISIBLE);
@@ -296,9 +296,9 @@ public class ProfileFragment extends Fragment {
                 builder.setPositiveButton("Save", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        final TextView t = view.findViewById(R.id.textView17);
+                        final TextView t = view.findViewById(R.id.primaryName);
                         t.setText(one.getText().toString());
-                        final TextView t2 = view.findViewById(R.id.textView18);
+                        final TextView t2 = view.findViewById(R.id.primaryNumber);
                         t2.setText(two.getText().toString());
                         nine.setVisibility(View.GONE);
                         //m_Text = input.getText().toString();
@@ -348,9 +348,9 @@ public class ProfileFragment extends Fragment {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         //if(one.getText().toString().contains("@")&&one.getText().toString().contains(".")) {
-                        final TextView t = view.findViewById(R.id.textView14);
+                        final TextView t = view.findViewById(R.id.savingName);
                         t.setText(one.getText().toString());
-                        final TextView t2 = view.findViewById(R.id.textView13);
+                        final TextView t2 = view.findViewById(R.id.savingsNumber);
                         t2.setText(two.getText().toString());
                         twelve.setVisibility(View.GONE);
                         // } else {

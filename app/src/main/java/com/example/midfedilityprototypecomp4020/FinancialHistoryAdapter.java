@@ -19,20 +19,18 @@ public class FinancialHistoryAdapter extends RecyclerView.Adapter<FinancialHisto
     List<Double> money;
 
 
-    public FinancialHistoryAdapter(List <String> names, List<Double> money){
-        this.names=names;
-        this.money=money;
+    public FinancialHistoryAdapter(List<String> names, List<Double> money) {
+        this.names = names;
+        this.money = money;
     }
+
     @NonNull
     @Override
     public FinancialHistoryAdapter.Viewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         Context context = parent.getContext();
         LayoutInflater inflater = LayoutInflater.from(context);
-        View view= inflater.inflate(R.layout.fh_row,parent,false);
-        Viewholder viewholder= new Viewholder(view);
-
-
-
+        View view = inflater.inflate(R.layout.fh_row, parent, false);
+        Viewholder viewholder = new Viewholder(view);
 
         return viewholder;
     }
@@ -40,7 +38,7 @@ public class FinancialHistoryAdapter extends RecyclerView.Adapter<FinancialHisto
     @Override
     public void onBindViewHolder(@NonNull FinancialHistoryAdapter.Viewholder holder, int position) {
         holder.name.setText(names.get(position));
-        holder.money.setText("$"+money.get(position).toString());
+        holder.money.setText("$" + money.get(position).toString());
     }
 
     /**
@@ -54,31 +52,21 @@ public class FinancialHistoryAdapter extends RecyclerView.Adapter<FinancialHisto
     }
 
     @Override
-    public void onAttachedToRecyclerView(
-            RecyclerView recyclerView)
-    {
+    public void onAttachedToRecyclerView(RecyclerView recyclerView) {
         super.onAttachedToRecyclerView(recyclerView);
     }
 
-    public class Viewholder extends RecyclerView.ViewHolder implements View.OnClickListener{
+    public class Viewholder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        private TextView name,money;
-
+        private TextView name, money;
 
         public Viewholder(@NonNull View itemView) {
             super(itemView);
-            name =itemView.findViewById(R.id.textView3);
-            money=itemView.findViewById(R.id.textView4);
-
-
+            name = itemView.findViewById(R.id.textView3);
+            money = itemView.findViewById(R.id.textView4);
 
             itemView.setOnClickListener(this);
-
-
-
         }
-
-
 
         @Override
         public void onClick(View v) {
